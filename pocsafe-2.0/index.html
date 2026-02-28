@@ -1,0 +1,931 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PocSafe - Conectados ao que importa</title>
+
+    <!-- Fonte do Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVEGAÇÃO -->
+    <nav class="nav">
+      <div
+        class="brand"
+        onclick="voltarAoTopo()"
+        role="button"
+        aria-label="Voltar ao topo"
+      >
+        <img
+          class="brand-mark"
+          src="assets/images/logo-120.png"
+          srcset="assets/images/logo-120.png 1x, assets/images/logo-240.png 2x"
+          alt="PocSafe"
+          width="60"
+          height="60"
+          decoding="async"
+        />
+        <span class="brand-text">PocSafe</span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#proposito">Propósito</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#segmentos">Segmentos</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+
+      <button
+        class="mobile-menu"
+        type="button"
+        onclick="toggleMenu()"
+        aria-label="Abrir menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="topo">
+        <div class="container hero-inner">
+          <!-- LEFT -->
+          <div class="hero-left">
+            <h1 class="hero-title">Ambientes escolares com foco absoluto.</h1>
+
+            <p class="hero-subtitle">
+              Implementação estruturada de política phone-free com método,
+              conformidade e aplicação profissional.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#contato" class="btn btn-primary"
+                ><span class="cta-desktop">Solicitar Diagnóstico Inicial</span
+                ><span class="cta-mobile">Solicitar Diagnóstico</span></a
+              >
+              <a href="#como-funciona" class="btn btn-secondary"
+                ><span class="cta-desktop">Conhecer a Metodologia</span
+                ><span class="cta-mobile">Ver Metodologia</span></a
+              >
+            </div>
+
+            <div class="hero-features-inline">
+              <span>Alinhado à legislação vigente</span>
+              <span>Método estruturado</span>
+              <span>Redução de conflitos</span>
+              <span>Aplicação organizada</span>
+              <span class="has-tooltip">
+                Selo Internacional*
+                <span class="tooltip-text">
+                  *O selo é concedido por entidade certificadora independente
+                  sediada no Reino Unido. A PocSafe atua como parceira
+                  estratégica e intermediadora do processo no Brasil.*
+                </span>
+              </span>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="hero-right">
+            <div class="hero-image-wrap">
+              <img
+                src="assets/images/alunocorredor-960.png"
+                srcset="
+                  assets/images/alunocorredor-960.png  960w,
+                  assets/images/alunocorredor.png     1536w
+                "
+                sizes="(max-width: 980px) 92vw, 580px"
+                alt="PocSafe - Pouch para celular"
+                class="hero-image"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROPÓSITO -->
+      <section class="section proposito" id="proposito">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Presença, Foco e Cuidado
+          </h2>
+
+          <p class="section-subtitle animate-on-scroll">
+            Uma estrutura clara para o equilíbrio digital nas escolas.
+          </p>
+
+          <div class="proposito-content animate-on-scroll">
+            <p class="highlight">É nesse ponto que a PocSafe atua.</p>
+
+            <div class="proposito-grid">
+              <div class="proposito-left">
+                <p>
+                  O uso irrestrito de celulares no ambiente escolar tornou-se um
+                  dos principais fatores de distração, queda de desempenho
+                  acadêmico e aumento de conflitos disciplinares.
+                </p>
+
+                <p>
+                  A legislação brasileira estabelece diretrizes claras para o
+                  uso de dispositivos eletrônicos durante o período escolar. O
+                  desafio está na implementação prática, consistente e
+                  equilibrada dessas normas no cotidiano institucional.
+                </p>
+              </div>
+
+              <div class="proposito-right">
+                <p class="manifesto">
+                  Atuamos como parceira estratégica na implementação estruturada
+                  da política phone-free, transformando diretrizes legais em um
+                  processo claro, organizado e aplicável à realidade escolar.
+                </p>
+
+                <ul class="proposito-list">
+                  <li>Estrutura operacional definida</li>
+                  <li>Comunicação alinhada com a comunidade</li>
+                  <li>Redução de conflitos e resistência</li>
+                  <li>Aplicação previsível e sustentável</li>
+                </ul>
+
+                <div class="quote">
+                  "A PocSafe não se posiciona como ferramenta punitiva, mas como
+                  instrumento de governança, organização e cuidado
+                  institucional."
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMO FUNCIONA -->
+      <section class="como-funciona" id="como-funciona">
+        <div class="container">
+          <header class="cf-head animate-on-scroll">
+            <h2 class="cf-title">Como funciona na prática</h2>
+            <p class="cf-subtitle">
+              Uma rotina simples, previsível e alinhada à política phone-free —
+              com organização e aceitação no ambiente escolar.
+            </p>
+
+            <div class="cf-proof">
+              <span>Fluxo definido</span>
+              <span>Pontos de desbloqueio</span>
+              <span>Treinamento da equipe</span>
+            </div>
+          </header>
+
+          <div class="cf-flow">
+            <div class="cf-line" aria-hidden="true"></div>
+
+            <article class="cf-step cf-step-image animate-on-scroll">
+              <div class="cf-bubble">
+                <div class="cf-badge">01</div>
+                <div class="cf-icon" aria-hidden="true">
+                  <img
+                    src="assets/images/pocsafearrive-square.png"
+                    srcset="
+                      assets/images/pocsafearrive-square.png      1x,
+                      assets/images/pocsafearrive-square-1024.png 2x
+                    "
+                    alt=""
+                    width="120"
+                    height="120"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+
+              <div class="cf-card">
+                <h3>Chegada</h3>
+                <p>
+                  O aluno guarda o celular no pouch e permanece com ele durante
+                  todo o período escolar.
+                </p>
+                <ul>
+                  <li>Segurança e previsibilidade</li>
+                  <li>Sem coleta/confisco</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="cf-step cf-step-image animate-on-scroll">
+              <div class="cf-bubble">
+                <div class="cf-badge">02</div>
+                <div class="cf-icon" aria-hidden="true">
+                  <img
+                    src="assets/images/pocsafesecure-square.png"
+                    srcset="
+                      assets/images/pocsafesecure-square.png      1x,
+                      assets/images/pocsafesecure-square-1024.png 2x
+                    "
+                    alt=""
+                    width="120"
+                    height="120"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+
+              <div class="cf-card">
+                <h3>Travar</h3>
+                <p>
+                  Ao entrar no ambiente escolar, o pouch é travado. Sem acesso,
+                  sem notificações, sem distrações.
+                </p>
+                <ul>
+                  <li>Redução de conflitos</li>
+                  <li>Rotina clara para todos</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="cf-step cf-step-image animate-on-scroll">
+              <div class="cf-bubble">
+                <div class="cf-badge">03</div>
+                <div class="cf-icon" aria-hidden="true">
+                  <img
+                    src="assets/images/pocsafeopen-square.png"
+                    srcset="
+                      assets/images/pocsafeopen-square.png      1x,
+                      assets/images/pocsafeopen-square-1024.png 2x
+                    "
+                    alt=""
+                    width="120"
+                    height="120"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+
+              <div class="cf-card">
+                <h3>Saída</h3>
+                <p>
+                  Na saída, o desbloqueio acontece em pontos definidos. Processo
+                  rápido, organizado e sem filas.
+                </p>
+                <ul>
+                  <li>Operação simples</li>
+                  <li>Controle institucional</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFÍCIOS -->
+      <section class="section beneficios" id="beneficios">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Mais do que cumprir a lei
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            É criar uma cultura de equilíbrio digital
+          </p>
+
+          <div class="benefits-grid">
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="8"></circle>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="12" cy="12" r="1.3"></circle>
+                </svg>
+                Protagonismo
+              </h3>
+              <p>
+                O aluno mantém a posse do celular, promovendo
+                autorresponsabilização e reduzindo a ansiedade associada à
+                retirada do aparelho.
+              </p>
+            </div>
+
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M4 18h16"></path>
+                  <path d="M6 15l4-4 3 3 5-6"></path>
+                  <path d="M15.5 8H18v2.5"></path>
+                </svg>
+                Produtividade
+              </h3>
+              <p>
+                Menos distrações, mais foco. A ausência de notificações melhora
+                a concentração e o desempenho acadêmico imediatamente.
+              </p>
+            </div>
+
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="3.2"></circle>
+                  <path d="M12 3.8v2.1"></path>
+                  <path d="M12 18.1v2.1"></path>
+                  <path d="M3.8 12h2.1"></path>
+                  <path d="M18.1 12h2.1"></path>
+                  <path d="M6.2 6.2l1.5 1.5"></path>
+                  <path d="M16.3 16.3l1.5 1.5"></path>
+                  <path d="M6.2 17.8l1.5-1.5"></path>
+                  <path d="M16.3 7.7l1.5-1.5"></path>
+                </svg>
+                Praticidade
+              </h3>
+              <p>
+                Armazenamento rápido e fácil. Não há necessidade de armários,
+                cofres ou fiscalização constante por parte dos professores.
+              </p>
+            </div>
+
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M20 7h-5"></path>
+                  <path d="M20 7l-2.2-2.2"></path>
+                  <path d="M20 7l-2.2 2.2"></path>
+                  <path d="M4 17h5"></path>
+                  <path d="M4 17l2.2-2.2"></path>
+                  <path d="M4 17l2.2 2.2"></path>
+                  <path d="M7 9.5A6.2 6.2 0 0 1 17 7"></path>
+                  <path d="M17 14.5A6.2 6.2 0 0 1 7 17"></path>
+                </svg>
+                Quebra de Hábito
+              </h3>
+              <p>
+                Ajuda a interromper o ciclo automático de checagem do celular,
+                reduzindo o impulso e promovendo o uso consciente da tecnologia.
+              </p>
+            </div>
+
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="7.2"></circle>
+                  <circle cx="12" cy="12" r="3.2"></circle>
+                  <path d="M12 2.8v2"></path>
+                  <path d="M12 19.2v2"></path>
+                  <path d="M2.8 12h2"></path>
+                  <path d="M19.2 12h2"></path>
+                </svg>
+                Atenção Plena
+              </h3>
+              <p>
+                Imersão total no momento presente. Aulas mais produtivas,
+                recreios com mais interação social e um clima escolar mais leve.
+              </p>
+            </div>
+
+            <div class="benefit-item animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 20s-6.7-4.1-8.9-7.8C1.2 9.2 2.7 5.7 6 5.2c2-.3 3.6.5 4.6 2 1-1.5 2.6-2.3 4.6-2 3.3.5 4.8 4 2.9 7-2.2 3.7-8.9 7.8-8.9 7.8Z"
+                  ></path>
+                </svg>
+                Bem-Estar
+              </h3>
+              <p>
+                Menos tempo de tela significa redução de estresse, ansiedade e
+                comparação social — protegendo a saúde mental dos estudantes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEGMENTOS -->
+      <section class="section segmentos" id="segmentos">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Soluções para quem acredita no poder da presença
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            Atendemos diferentes ambientes com a mesma qualidade
+          </p>
+
+          <div class="segments-grid">
+            <div class="segment-card animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <path d="M3.5 9.5L12 5l8.5 4.5"></path>
+                  <path d="M5.5 10.5V19h13v-8.5"></path>
+                  <path d="M9 19v-5h6v5"></path>
+                  <path d="M10 11h4"></path>
+                </svg>
+                Escolas
+              </h3>
+              <p>
+                Ambientes de aprendizagem focados, adequação às normas legais e
+                proteção do bem-estar emocional dos alunos.
+              </p>
+              <a href="#contato" class="btn btn-light">Conhecer Solução</a>
+            </div>
+
+            <div class="segment-card animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <rect x="4" y="6" width="16" height="14" rx="2"></rect>
+                  <path d="M4 10h16"></path>
+                  <path d="M8 4v4"></path>
+                  <path d="M16 4v4"></path>
+                  <path d="M9 14h6"></path>
+                </svg>
+                Eventos
+              </h3>
+              <p>
+                Garantia de atenção plena do público e experiências mais
+                imersivas e memoráveis.
+              </p>
+              <a href="#contato" class="btn btn-light">Soluções para Eventos</a>
+            </div>
+
+            <div class="segment-card animate-on-scroll">
+              <h3>
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  aria-hidden="true"
+                >
+                  <rect x="3.5" y="7" width="17" height="13" rx="2"></rect>
+                  <path
+                    d="M9 7V5.8C9 5 9.7 4.3 10.5 4.3h3c.8 0 1.5.7 1.5 1.5V7"
+                  ></path>
+                  <path d="M3.5 12h17"></path>
+                  <path d="M11 12v2h2v-2"></path>
+                </svg>
+                Empresas
+              </h3>
+              <p>
+                Maior engajamento nas capacitações e proteção de informações
+                sensíveis.
+              </p>
+              <a href="#contato" class="btn btn-light">Soluções Corporativas</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DEPOIMENTOS -->
+      <section id="depoimentos" class="testimonials section">
+        <div class="container">
+          <header class="section-head">
+            <h2 class="section-title">Quem já transformou com a PocSafe</h2>
+            <p class="section-subtitle">Histórias reais de mudança</p>
+          </header>
+
+          <div class="testimonials-grid">
+            <article class="t-card animate-on-scroll">
+              <div class="t-quote">
+                Implementar a PocSafe foi um divisor de águas. O clima escolar
+                mudou completamente — as crianças interagem mais no recreio, as
+                aulas são mais produtivas e os professores finalmente podem
+                focar no que realmente importa: ensinar.
+              </div>
+              <div class="t-meta">
+                <div class="t-person">
+                  <div class="t-name">Diretor de Escola</div>
+                  <div class="t-role">Colégio Particular</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="t-card animate-on-scroll">
+              <div class="t-quote">
+                A melhor parte é que não há confronto. Os pais entendem que é
+                uma questão de saúde mental, os alunos se adaptaram rapidamente
+                e nós cumprimos a lei sem gerar trauma ou resistência.
+              </div>
+              <div class="t-meta">
+                <div class="t-person">
+                  <div class="t-name">Coordenadora Pedagógica</div>
+                  <div class="t-role">Ensino Fundamental</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="t-card animate-on-scroll">
+              <div class="t-quote">
+                Antes eu perdia pelo menos 15 minutos de cada aula pedindo para
+                guardarem os celulares. Agora isso simplesmente não existe mais.
+                A diferença no foco dos alunos é impressionante.
+              </div>
+              <div class="t-meta">
+                <div class="t-person">
+                  <div class="t-name">Professor</div>
+                  <div class="t-role">Ensino Médio</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Dúvidas frequentes</h2>
+
+          <div class="faq-wrap">
+            <div class="faq-list">
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  A PocSafe está alinhada à legislação brasileira vigente?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  Sim. A PocSafe foi desenvolvida para apoiar escolas na
+                  implementação estruturada das diretrizes legais sobre uso de
+                  dispositivos eletrônicos no ambiente escolar.<br /><br />
+                  Nossa solução transforma a orientação normativa em um processo
+                  operacional claro, previsível e aplicável à rotina da escola —
+                  mantendo o celular inacessível durante o período letivo, sem
+                  ruptura ou confronto.
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  O aluno fica sem o celular? Isso gera ansiedade?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  Não. O grande diferencial da PocSafe é que o aparelho
+                  permanece com o aluno, sob sua responsabilidade, porém
+                  inacessível durante as aulas.<br /><br />
+                  Essa abordagem reduz drasticamente a ansiedade associada à
+                  retirada do dispositivo ou armazenamento coletivo, preservando
+                  segurança emocional e autonomia supervisionada.
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  Como funciona em situações de emergência?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  As bases de desbloqueio são posicionadas em pontos
+                  estratégicos definidos pela escola (secretaria, coordenação,
+                  enfermaria).<br /><br />
+                  Em qualquer situação necessária, o desbloqueio é imediato,
+                  mantendo controle institucional sem comprometer a segurança.
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  E se o pouch for danificado ou perdido?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  O kit escolar é dimensionado com unidades de reposição.<br /><br />
+                  Além disso, a implementação inclui orientação aos alunos e
+                  termos claros de responsabilidade para famílias, garantindo
+                  previsibilidade e cuidado com o material.
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  Funciona para todas as idades?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  Sim. A PocSafe atende desde a educação infantil até o ensino
+                  médio.<br /><br />
+                  A aplicação é adaptada à faixa etária, mas o princípio
+                  permanece: dispositivos fisicamente inacessíveis durante o
+                  período escolar, com rotina estruturada e supervisionada.
+                </div>
+              </div>
+
+              <div class="faq-item animate-on-scroll">
+                <div class="faq-question" data-faq>
+                  Qual é o modelo de investimento?
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  Trabalhamos com o modelo de kit institucional, dimensionado
+                  conforme o número de alunos.<br /><br />
+                  Cada proposta é personalizada para a realidade da escola,
+                  considerando fluxo, estrutura física e política interna.<br /><br />
+                  <a
+                    href="https://wa.me/447459090437?text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20implementa%C3%A7%C3%A3o%20da%20PocSafe%20na%20minha%20escola."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Entre em contato para um diagnóstico inicial sem
+                    compromisso.</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="section contato" id="contato">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">
+            Pronto para transformar sua escola?
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            Fale com nosso time de especialistas
+          </p>
+
+          <form
+            class="contato-form animate-on-scroll"
+            action="https://formspree.io/f/xkovzvwv"
+            method="POST"
+          >
+            <div class="form-group">
+              <label>Nome *</label>
+              <input
+                type="text"
+                name="nome"
+                placeholder="Seu nome completo"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email *</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="seu@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Cargo *</label>
+              <input
+                type="text"
+                name="cargo"
+                placeholder="Ex: Diretor, Coordenador, Professor"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Nome da Escola *</label>
+              <input
+                type="text"
+                name="escola"
+                placeholder="Nome da instituição"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Número de Alunos *</label>
+              <input
+                type="number"
+                name="numero_alunos"
+                placeholder="Ex: 500"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Situação atual sobre celulares *</label>
+              <select class="field" name="situacao_celulares" required>
+                <option value="">Selecione uma opção</option>
+                <option value="sem_politica">
+                  Não temos política definida
+                </option>
+                <option value="professores_fiscalizam">
+                  Professores fiscalizam
+                </option>
+                <option value="armarios_coletivos">
+                  Usamos armários/cofres
+                </option>
+                <option value="proibido_mas_nao_funciona">
+                  Proibido mas não funciona
+                </option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Prazo de implementação *</label>
+              <select class="field" name="prazo_implementacao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="imediato">Imediato</option>
+                <option value="1_mes">Em 1 mês</option>
+                <option value="3_meses">Em 3 meses</option>
+                <option value="6_meses">Em 6 meses</option>
+                <option value="ainda_nao_sei">Ainda não sei</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>WhatsApp *</label>
+              <input
+                type="tel"
+                name="whatsapp"
+                placeholder="(XX) XXXXX-XXXX"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Mensagem (opcional)</label>
+              <textarea
+                name="mensagem"
+                rows="4"
+                placeholder="Conte-nos mais sobre sua escola..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              Enviar Mensagem
+            </button>
+          </form>
+
+          <div class="contact-info">
+            <a
+              id="contactEmailLink"
+              href="mailto:contato@pocsafe.co.uk?subject=Contato%20PocSafe&body=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20PocSafe.%0A%0ANome%3A%20%0AEscola%3A%20%0ACidade%3A%20%0AN%C2%BA%20de%20alunos%3A%20%0ATelefone%2FWhatsApp%3A%20"
+              data-gmail-compose="https://mail.google.com/mail/?view=cm&fs=1&to=contato@pocsafe.co.uk&su=Contato%20PocSafe&body=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20a%20PocSafe.%0A%0ANome%3A%20%0AEscola%3A%20%0ACidade%3A%20%0AN%C2%BA%20de%20alunos%3A%20%0ATelefone%2FWhatsApp%3A%20"
+            >
+              <svg
+                class="contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <rect
+                  x="3"
+                  y="5"
+                  width="18"
+                  height="14"
+                  rx="3"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4.5 7 12 12.5 19.5 7"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              contato@pocsafe.co.uk</a
+            >
+            <p>
+              <svg
+                class="contact-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M8.2 3.8h7.6c1 0 1.8.8 1.8 1.8v12.8c0 1-.8 1.8-1.8 1.8H8.2c-1 0-1.8-.8-1.8-1.8V5.6c0-1 .8-1.8 1.8-1.8Z"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M10 6.8h4"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+                <circle cx="12" cy="17.2" r="1" fill="currentColor" />
+              </svg>
+              +44 07459-090437
+            </p>
+          </div>
+
+          <a
+            href="https://wa.me/447459090437?text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20implementa%C3%A7%C3%A3o%20da%20PocSafe%20na%20minha%20escola."
+            class="btn btn-primary contact-whatsapp-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Falar no WhatsApp"
+            title="Falar no WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12.02 4.2c-4.26 0-7.72 3.39-7.72 7.57 0 1.35.37 2.67 1.06 3.83L4.3 19.5l4.01-1.04a7.78 7.78 0 0 0 3.71.95h.01c4.26 0 7.72-3.39 7.72-7.57S16.29 4.2 12.02 4.2Zm0 13.88h-.01a6.44 6.44 0 0 1-3.28-.89l-.23-.13-2.38.62.64-2.32-.14-.24a6.2 6.2 0 0 1-.98-3.35 6.39 6.39 0 0 1 6.38-6.25c1.7 0 3.3.65 4.5 1.84a6.16 6.16 0 0 1 1.88 4.41 6.39 6.39 0 0 1-6.38 6.31Zm3.5-4.73c-.19-.09-1.13-.55-1.3-.62-.17-.06-.3-.09-.42.09-.12.19-.49.62-.6.74-.11.13-.22.14-.4.05-.19-.09-.8-.29-1.52-.93-.56-.5-.95-1.12-1.06-1.31-.11-.19-.01-.3.09-.38.08-.08.19-.22.29-.34.1-.11.13-.19.19-.33.06-.13.03-.24-.02-.33-.05-.09-.42-1.02-.58-1.39-.16-.36-.31-.31-.42-.31h-.36c-.13 0-.33.06-.52.23-.18.19-.67.66-.67 1.58 0 .93.68 1.82.78 1.95.1.13 1.36 2.06 3.3 2.9.46.2.82.31 1.1.39.46.15.88.13 1.2.08.37-.05 1.13-.46 1.29-.9.16-.44.16-.82.11-.91-.05-.08-.17-.13-.36-.23Z"
+                fill="currentColor"
+              />
+            </svg>
+            Falar no WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>
+        &copy; 2025 PocSafe. Todos os direitos reservados. | Presença, Foco e
+        Cuidado
+      </p>
+    </footer>
+
+    <a
+      href="https://wa.me/447459090437?text=Ol%C3%A1%2C%20gostaria%20de%20receber%20informa%C3%A7%C3%B5es%20sobre%20a%20implementa%C3%A7%C3%A3o%20da%20PocSafe%20na%20minha%20escola."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Falar no WhatsApp"
+      title="Falar no WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12.02 4.2c-4.26 0-7.72 3.39-7.72 7.57 0 1.35.37 2.67 1.06 3.83L4.3 19.5l4.01-1.04a7.78 7.78 0 0 0 3.71.95h.01c4.26 0 7.72-3.39 7.72-7.57S16.29 4.2 12.02 4.2Zm0 13.88h-.01a6.44 6.44 0 0 1-3.28-.89l-.23-.13-2.38.62.64-2.32-.14-.24a6.2 6.2 0 0 1-.98-3.35 6.39 6.39 0 0 1 6.38-6.25c1.7 0 3.3.65 4.5 1.84a6.16 6.16 0 0 1 1.88 4.41 6.39 6.39 0 0 1-6.38 6.31Zm3.5-4.73c-.19-.09-1.13-.55-1.3-.62-.17-.06-.3-.09-.42.09-.12.19-.49.62-.6.74-.11.13-.22.14-.4.05-.19-.09-.8-.29-1.52-.93-.56-.5-.95-1.12-1.06-1.31-.11-.19-.01-.3.09-.38.08-.08.19-.22.29-.34.1-.11.13-.19.19-.33.06-.13.03-.24-.02-.33-.05-.09-.42-1.02-.58-1.39-.16-.36-.31-.31-.42-.31h-.36c-.13 0-.33.06-.52.23-.18.19-.67.66-.67 1.58 0 .93.68 1.82.78 1.95.1.13 1.36 2.06 3.3 2.9.46.2.82.31 1.1.39.46.15.88.13 1.2.08.37-.05 1.13-.46 1.29-.9.16-.44.16-.82.11-.91-.05-.08-.17-.13-.36-.23Z"
+          fill="#ffffff"
+        />
+      </svg>
+    </a>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
